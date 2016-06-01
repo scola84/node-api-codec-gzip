@@ -1,26 +1,25 @@
-const zlib = require('zlib');
-const Decoder = zlib.Gunzip;
-const Encoder = zlib.Gzip;
 const encoding = 'gzip';
 
-function decoder(options) {
+import {
+  Gunzip as Decoder,
+  Gzip as Encoder
+} from 'zlib';
+
+export const codec = {
+  Decoder,
+  Encoder
+};
+
+export function decoder(options) {
   return {
     encoding,
     create: () => new Decoder(options)
   };
 }
 
-function encoder(options) {
+export function encoder(options) {
   return {
     encoding,
     create: () => new Encoder(options)
   };
 }
-
-module.exports = {
-  encoding,
-  decoder,
-  encoder,
-  Decoder,
-  Encoder
-};
