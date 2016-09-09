@@ -7,7 +7,8 @@ import {
 
 export const codec = {
   Decoder,
-  Encoder
+  Encoder,
+  encoding
 };
 
 export function decoder() {
