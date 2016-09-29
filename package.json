@@ -1,6 +1,6 @@
 {
   "name": "@scola/api-codec-gzip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gzip Codec",
   "repository": "github:scola84/node-api-codec-gzip",
   "author": "M.C. van den Boogaart <scola@kvdb.name>",
